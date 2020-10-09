@@ -139,7 +139,7 @@
                                 <connections>
                                     <outlet property="countryImageView" destination="Lt3-vA-cmy" id="TxZ-L1-TcX"/>
                                     <outlet property="countryTextLabel" destination="iX8-q5-Kw8" id="t8m-pz-d2C"/>
-                                    <outlet property="countryTitleLable" destination="tcc-ZX-Fpb" id="q27-jm-gY7"/>
+                                    <outlet property="countryTitleLabel" destination="tcc-ZX-Fpb" id="MG9-e3-kJa"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

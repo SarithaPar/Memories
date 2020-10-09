@@ -14,7 +14,7 @@ struct Country {
 }
 
 class CountryTableViewCell: UITableViewCell {
-	@IBOutlet weak var countryTitleLable: UILabel!
+	@IBOutlet weak var countryTitleLabel: UILabel!
 	@IBOutlet weak var countryTextLabel: UILabel!
 	@IBOutlet weak var countryImageView: UIImageView!
 }
@@ -49,7 +49,7 @@ class CountriesTableViewController : UITableViewController{
 		let cell = tableView.dequeueReusableCell(withIdentifier: "CountryCell", for: indexPath) as! CountryTableViewCell
 		
 		let country = countries[indexPath.row]
-		cell.countryTitleLable?.text = country.name
+		cell.countryTitleLabel?.text = country.name
 		cell.countryTextLabel?.text = country.isoCode
 		cell.countryImageView?.image = UIImage(named: country.isoCode)
 		

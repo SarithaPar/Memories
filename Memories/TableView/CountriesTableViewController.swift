@@ -44,6 +44,8 @@ class CountriesTableViewController : UITableViewController{
 		
 		let country = countries[indexPath.row]
 		cell.textLabel?.text = country.name
+		cell.detailTextLabel?.text = country.isoCode
+		cell.imageView?.image = UIImage(named: country.isoCode)
 		
 		return cell
 	}

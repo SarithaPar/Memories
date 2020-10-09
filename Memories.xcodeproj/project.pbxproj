@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		403AC864252EA95D00BBA8EF /* CountriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403AC863252EA95D00BBA8EF /* CountriesTableViewController.swift */; };
 		40C74BC724D0072F00A22E7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C74BC624D0072F00A22E7A /* AppDelegate.swift */; };
 		40C74BC924D0072F00A22E7A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C74BC824D0072F00A22E7A /* SceneDelegate.swift */; };
 		40C74BCB24D0072F00A22E7A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C74BCA24D0072F00A22E7A /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		403AC863252EA95D00BBA8EF /* CountriesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesTableViewController.swift; sourceTree = "<group>"; };
 		40C74BC324D0072F00A22E7A /* Memories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memories.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40C74BC624D0072F00A22E7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		40C74BC824D0072F00A22E7A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +43,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		403AC860252EA35D00BBA8EF /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				403AC863252EA95D00BBA8EF /* CountriesTableViewController.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
 		40C74BBA24D0072F00A22E7A = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +70,7 @@
 		40C74BC524D0072F00A22E7A /* Memories */ = {
 			isa = PBXGroup;
 			children = (
+				403AC860252EA35D00BBA8EF /* TableView */,
 				40C74BDD24D159FA00A22E7A /* MemoriesList */,
 				40C74BDA24D09F3700A22E7A /* ViewController */,
 				40C74BC624D0072F00A22E7A /* AppDelegate.swift */,
@@ -164,6 +175,7 @@
 				40C74BDC24D09F5000A22E7A /* MemoryListViewController.swift in Sources */,
 				40C74BC724D0072F00A22E7A /* AppDelegate.swift in Sources */,
 				40C74BC924D0072F00A22E7A /* SceneDelegate.swift in Sources */,
+				403AC864252EA95D00BBA8EF /* CountriesTableViewController.swift in Sources */,
 				40C74BDF24D15A1900A22E7A /* MemoriesCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

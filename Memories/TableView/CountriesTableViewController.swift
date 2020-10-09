@@ -20,8 +20,7 @@ class CountryTableViewCell: UITableViewCell {
 }
 
 class CountriesTableViewController : UITableViewController{
-	
-	let countries = [
+	var countries = [
 		Country(isoCode: "at", name: "Austria"),
 		Country(isoCode: "be", name: "Belgium"),
 		Country(isoCode: "de", name: "Germany"),
@@ -30,7 +29,7 @@ class CountriesTableViewController : UITableViewController{
 	]
 	
 	override func viewDidLoad() {
-		
+		self.tableView.isEditing = true
 		super.viewDidLoad()
 	}
 	
@@ -54,6 +53,21 @@ class CountriesTableViewController : UITableViewController{
 		cell.countryImageView?.image = UIImage(named: country.isoCode)
 		
 		return cell
+	}
+	
+	override func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
+		return .none
+	}
+	
+	override func tableView(_ tableView: UITableView, shouldIndentWhileEditingRowAt indexPath: IndexPath) -> Bool {
+		return false
+	}
+	
+	override func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+		let movedObject = countries[sourceIndexPath.row]
+		countries.remove(at: sourceIndexPath.row)
+		countries.insert(movedObject, at: destinationIndexPath.row)
+		
 	}
 	
 /*	override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {

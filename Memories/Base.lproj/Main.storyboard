@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Rnm-0x-lFg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kbE-3O-4aw">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -89,9 +89,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="101.08695652173914"/>
+            <point key="canvasLocation" x="-186" y="-404"/>
         </scene>
-        <!--Countries Table View Controller-->
+        <!--Table-->
         <scene sceneID="nfh-f1-l5Q">
             <objects>
                 <tableViewController storyboardIdentifier="VC" id="Rnm-0x-lFg" customClass="CountriesTableViewController" customModule="Memories" sceneMemberID="viewController">
@@ -149,10 +149,98 @@
                             <outlet property="delegate" destination="Rnm-0x-lFg" id="3sQ-yD-gSw"/>
                         </connections>
                     </tableView>
+                    <tabBarItem key="tabBarItem" title="Table" image="table" catalog="system" selectedImage="pencil" id="9be-VE-sGk"/>
+                    <navigationItem key="navigationItem" id="Zmd-bg-7CE"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gMB-mF-E58" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-578.26086956521749" y="100.2717391304348"/>
+            <point key="canvasLocation" x="-1551" y="-843"/>
+        </scene>
+        <!--Item 2-->
+        <scene sceneID="HjY-7i-Qfz">
+            <objects>
+                <viewController id="qaK-gC-NWf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GZw-ky-A2c">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="baG-Ln-5dP"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="ahP-bo-wiv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AOL-hS-eCj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1980" y="144"/>
+        </scene>
+        <!--Stopwatch-->
+        <scene sceneID="Z6B-xW-u5l">
+            <objects>
+                <viewController id="lrd-w0-GBm" customClass="StopwatchViewController" customModule="Memories" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="F5A-kS-f83">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b0v-pO-VIa">
+                                <rect key="frame" x="97" y="362" width="44" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="startButtonTapped:" destination="lrd-w0-GBm" eventType="touchUpInside" id="lWH-M3-mxm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NYB-s0-QGu">
+                                <rect key="frame" x="233" y="362" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="Stop/Reset"/>
+                                <connections>
+                                    <action selector="ResetButtonTapper:" destination="lrd-w0-GBm" eventType="touchUpInside" id="9pR-TO-Ew9"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="12:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="opP-Fq-hl9">
+                                <rect key="frame" x="20" y="194" width="374" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="62"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="IZN-XO-Q6H"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Stopwatch" image="clock" catalog="system" id="AWh-TM-fwA"/>
+                    <connections>
+                        <outlet property="timeLabel" destination="opP-Fq-hl9" id="fvM-5W-xCh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9kP-jb-jVc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2530.434782608696" y="-1109.5108695652175"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="rxA-rh-WCb">
+            <objects>
+                <tabBarController id="kbE-3O-4aw" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="D4K-Ik-jGY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Rnm-0x-lFg" kind="relationship" relationship="viewControllers" id="pvd-F9-nU6"/>
+                        <segue destination="lrd-w0-GBm" kind="relationship" relationship="viewControllers" id="rxg-kd-jyN"/>
+                        <segue destination="qaK-gC-NWf" kind="relationship" relationship="viewControllers" id="4JK-Zs-zag"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mGB-9l-z4J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4072" y="-403"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="clock" catalog="system" width="128" height="121"/>
+        <image name="pencil" catalog="system" width="128" height="113"/>
+        <image name="table" catalog="system" width="128" height="93"/>
+    </resources>
 </document>

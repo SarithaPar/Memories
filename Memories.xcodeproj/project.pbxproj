@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4000B304253117A40019C683 /* StopwatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4000B303253117A40019C683 /* StopwatchViewController.swift */; };
 		403AC864252EA95D00BBA8EF /* CountriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403AC863252EA95D00BBA8EF /* CountriesTableViewController.swift */; };
 		40C74BC724D0072F00A22E7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C74BC624D0072F00A22E7A /* AppDelegate.swift */; };
 		40C74BC924D0072F00A22E7A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C74BC824D0072F00A22E7A /* SceneDelegate.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4000B303253117A40019C683 /* StopwatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchViewController.swift; sourceTree = "<group>"; };
 		403AC863252EA95D00BBA8EF /* CountriesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesTableViewController.swift; sourceTree = "<group>"; };
 		40C74BC324D0072F00A22E7A /* Memories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memories.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40C74BC624D0072F00A22E7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +45,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4000B301253109D80019C683 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		4000B3022531177B0019C683 /* StopWatch */ = {
+			isa = PBXGroup;
+			children = (
+				4000B303253117A40019C683 /* StopwatchViewController.swift */,
+			);
+			path = StopWatch;
+			sourceTree = "<group>";
+		};
 		403AC860252EA35D00BBA8EF /* TableView */ = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +87,8 @@
 		40C74BC524D0072F00A22E7A /* Memories */ = {
 			isa = PBXGroup;
 			children = (
+				4000B3022531177B0019C683 /* StopWatch */,
+				4000B301253109D80019C683 /* Tabbar */,
 				403AC860252EA35D00BBA8EF /* TableView */,
 				40C74BDD24D159FA00A22E7A /* MemoriesList */,
 				40C74BDA24D09F3700A22E7A /* ViewController */,
@@ -176,6 +195,7 @@
 				40C74BC724D0072F00A22E7A /* AppDelegate.swift in Sources */,
 				40C74BC924D0072F00A22E7A /* SceneDelegate.swift in Sources */,
 				403AC864252EA95D00BBA8EF /* CountriesTableViewController.swift in Sources */,
+				4000B304253117A40019C683 /* StopwatchViewController.swift in Sources */,
 				40C74BDF24D15A1900A22E7A /* MemoriesCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

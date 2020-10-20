@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4000B304253117A40019C683 /* StopwatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4000B303253117A40019C683 /* StopwatchViewController.swift */; };
+		4007DA16253E5F250002E36E /* MemoriesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4007DA15253E5F250002E36E /* MemoriesUITests.swift */; };
 		403AC864252EA95D00BBA8EF /* CountriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403AC863252EA95D00BBA8EF /* CountriesTableViewController.swift */; };
 		40C74BC724D0072F00A22E7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C74BC624D0072F00A22E7A /* AppDelegate.swift */; };
 		40C74BC924D0072F00A22E7A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C74BC824D0072F00A22E7A /* SceneDelegate.swift */; };
@@ -19,8 +20,21 @@
 		40C74BDF24D15A1900A22E7A /* MemoriesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C74BDE24D15A1900A22E7A /* MemoriesCell.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		4007DA18253E5F250002E36E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40C74BBB24D0072F00A22E7A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 40C74BC224D0072F00A22E7A;
+			remoteInfo = Memories;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		4000B303253117A40019C683 /* StopwatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchViewController.swift; sourceTree = "<group>"; };
+		4007DA13253E5F250002E36E /* MemoriesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MemoriesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4007DA15253E5F250002E36E /* MemoriesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoriesUITests.swift; sourceTree = "<group>"; };
+		4007DA17253E5F250002E36E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		403AC863252EA95D00BBA8EF /* CountriesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesTableViewController.swift; sourceTree = "<group>"; };
 		40C74BC324D0072F00A22E7A /* Memories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memories.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40C74BC624D0072F00A22E7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -35,6 +49,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4007DA10253E5F250002E36E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		40C74BC024D0072F00A22E7A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -60,6 +81,15 @@
 			path = StopWatch;
 			sourceTree = "<group>";
 		};
+		4007DA14253E5F250002E36E /* MemoriesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4007DA15253E5F250002E36E /* MemoriesUITests.swift */,
+				4007DA17253E5F250002E36E /* Info.plist */,
+			);
+			path = MemoriesUITests;
+			sourceTree = "<group>";
+		};
 		403AC860252EA35D00BBA8EF /* TableView */ = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				40C74BC524D0072F00A22E7A /* Memories */,
+				4007DA14253E5F250002E36E /* MemoriesUITests */,
 				40C74BC424D0072F00A22E7A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -80,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				40C74BC324D0072F00A22E7A /* Memories.app */,
+				4007DA13253E5F250002E36E /* MemoriesUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -122,6 +154,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		4007DA12253E5F250002E36E /* MemoriesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4007DA1C253E5F250002E36E /* Build configuration list for PBXNativeTarget "MemoriesUITests" */;
+			buildPhases = (
+				4007DA0F253E5F250002E36E /* Sources */,
+				4007DA10253E5F250002E36E /* Frameworks */,
+				4007DA11253E5F250002E36E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4007DA19253E5F250002E36E /* PBXTargetDependency */,
+			);
+			name = MemoriesUITests;
+			productName = MemoriesUITests;
+			productReference = 4007DA13253E5F250002E36E /* MemoriesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		40C74BC224D0072F00A22E7A /* Memories */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 40C74BD724D0073100A22E7A /* Build configuration list for PBXNativeTarget "Memories" */;
@@ -149,6 +199,10 @@
 				LastUpgradeCheck = 1160;
 				ORGANIZATIONNAME = "Par, Saritha";
 				TargetAttributes = {
+					4007DA12253E5F250002E36E = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 40C74BC224D0072F00A22E7A;
+					};
 					40C74BC224D0072F00A22E7A = {
 						CreatedOnToolsVersion = 11.6;
 					};
@@ -168,11 +222,19 @@
 			projectRoot = "";
 			targets = (
 				40C74BC224D0072F00A22E7A /* Memories */,
+				4007DA12253E5F250002E36E /* MemoriesUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4007DA11253E5F250002E36E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		40C74BC124D0072F00A22E7A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -186,6 +248,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4007DA0F253E5F250002E36E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4007DA16253E5F250002E36E /* MemoriesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		40C74BBF24D0072F00A22E7A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -201,6 +271,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4007DA19253E5F250002E36E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 40C74BC224D0072F00A22E7A /* Memories */;
+			targetProxy = 4007DA18253E5F250002E36E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		40C74BCC24D0072F00A22E7A /* Main.storyboard */ = {
@@ -222,6 +300,42 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		4007DA1A253E5F250002E36E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MemoriesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.saritha.MemoriesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Memories;
+			};
+			name = Debug;
+		};
+		4007DA1B253E5F250002E36E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MemoriesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.saritha.MemoriesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Memories;
+			};
+			name = Release;
+		};
 		40C74BD524D0073100A22E7A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -373,6 +487,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4007DA1C253E5F250002E36E /* Build configuration list for PBXNativeTarget "MemoriesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4007DA1A253E5F250002E36E /* Debug */,
+				4007DA1B253E5F250002E36E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		40C74BBE24D0072F00A22E7A /* Build configuration list for PBXProject "Memories" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
